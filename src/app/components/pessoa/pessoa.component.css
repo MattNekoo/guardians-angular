@@ -1,0 +1,28 @@
+.image {
+    background-image: url('../../../assets/img/wallpaperflare.crepusculo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    padding-bottom: 100%;
+  }
+  
+  .body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1000px;
+    color: white;
+    padding-top: 100px;
+  }
+  
+  .container {
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+    box-sizing: border-box;
+    display: block;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    position: center;
+    margin: auto;
+  }

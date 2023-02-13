@@ -1,0 +1,54 @@
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+}
+/* 
+.header :not(.child) {
+  opacity: 1;
+} */
+
+/* .child {
+  color: red;
+  background-color: black;
+} */
+
+/* .header::before{
+  opacity: 0.8;
+  content: '';
+  position: absolute;
+  z-index: -1;
+} */
+
+.header a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: orange;
+}
+
+.header a:hover {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: red;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.header .logo {
+  max-height: 50px;
+}
+
+.header .title-group {
+  padding-left: 25px;
+}
+
+.header .title-group i {
+  padding-right: 5px;
+}
+
+.header .material-icons {
+  color: white;
+}
