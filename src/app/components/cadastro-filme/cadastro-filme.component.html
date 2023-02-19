@@ -1,0 +1,12 @@
+<div class="body image">
+  <div class="container">
+    <h3>Cadastro de Filmes</h3>
+    <form class="example-form" method="post" #frm="ngForm" (ngSubmit)="criar(frm.value)">
+      <mat-form-field class="example-full-width">
+        <mat-label>Nome do Filme</mat-label>
+        <input matInput placeholder="Nome do Filme" [(ngModel)]="filme.nome" name="nome" required>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit" [disabled]="frm.invalid">Salvar</button>
+    </form>
+  </div>
+</div>

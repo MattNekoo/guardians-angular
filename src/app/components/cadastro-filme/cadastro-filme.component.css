@@ -5,45 +5,35 @@
     background-size: cover;
     max-width: 100%;
     padding-bottom: 100%;
-  }
-  
-  .body {
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+.body {
     margin: 0;
     padding: 0;
     padding-bottom: 1000px;
     color: white;
     padding-top: 100px;
-  }
-  
-  .container {
+}
+
+.container {
     text-align: center;
     justify-content: center;
-    width: 60%;
+    width: 50%;
     box-sizing: border-box;
     display: block;
     flex-wrap: wrap;
     padding-top: 1rem;
     position: center;
     margin: auto;
-  }
-  
-  table {
-    width: 100%;
-  }
-  
-  /* table tr:hover {
-    background: yellow;
-  } */
-  
-  table th {
-    font-size: 18px;
-  }
-  
-  table td {
-    font-size: 16px;
-  }
-  
-  .divbotaonovo {
-    margin-bottom: 25px;
-  }
-  
+}
