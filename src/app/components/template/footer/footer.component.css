@@ -2,10 +2,12 @@
   position: fixed;
   bottom: 0;
   justify-content: flex-end;
-  opacity: 0.6;
+  opacity: 0.5;
+  background-color: black;
+  color:aliceblue;
 }
 
 .foot > span {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 200;
 }

@@ -26,6 +26,7 @@ import { FormsModule } from '@angular/forms';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { ToastrModule } from 'ngx-toastr';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { ListarFilmesComponent } from './components/listar-filmes/listar-filmes.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     HeaderComponent,
     ContentComponent,
     FooterComponent,
-    CadastroCategoriaComponent
+    CadastroCategoriaComponent,
+    ListarFilmesComponent
   ],
   imports: [
     BrowserModule,
