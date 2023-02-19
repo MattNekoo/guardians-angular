@@ -21,12 +21,14 @@ import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { ToastrModule } from 'ngx-toastr';
-import {MatTooltipModule} from '@angular/material/tooltip';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { ListarFilmesComponent } from './components/listar-filmes/listar-filmes.component';
+import { CadastroFilmeComponent } from './components/cadastro-filme/cadastro-filme.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,8 @@ import { ListarFilmesComponent } from './components/listar-filmes/listar-filmes.
     ContentComponent,
     FooterComponent,
     CadastroCategoriaComponent,
-    ListarFilmesComponent
+    ListarFilmesComponent,
+    CadastroFilmeComponent
   ],
   imports: [
     BrowserModule,
@@ -53,6 +56,7 @@ import { ListarFilmesComponent } from './components/listar-filmes/listar-filmes.
     MatMenuModule,
     MatIconModule,
     MatTableModule,
+    MatDialogModule,
     MatInputModule,
     FormsModule,
     MatPaginatorModule,

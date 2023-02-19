@@ -36,4 +36,9 @@
     padding-top: 1rem;
     position: center;
     margin: auto;
+    color: orange;
+}
+
+.dialog {
+    margin-top: 20px;
 }

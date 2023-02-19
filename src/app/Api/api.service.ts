@@ -14,6 +14,10 @@ export class ApiService {
     return this.http.get<any>(`${API_PATH}categorias`);
   }
 
+  listAllFilmes(): Observable<any> {
+    return this.http.get<any>(`${API_PATH}filme`);
+  }
+
   listAllPessoas(): Observable<any> {
     return this.http.get<any>(`${API_PATH}pessoas`);
   }

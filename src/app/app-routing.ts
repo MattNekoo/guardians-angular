@@ -4,10 +4,14 @@ import { HomeComponent } from './components/home/home.component';
 import { PessoaComponent } from './components/pessoa/pessoa.component';
 import { CategoriaComponent } from './components/categoria/categoria.component';
 import { Routes, RouterModule } from "@angular/router";
+import { ListarFilmesComponent } from './components/listar-filmes/listar-filmes.component';
+import { CadastroFilmeComponent } from './components/cadastro-filme/cadastro-filme.component';
 
 const APP_ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'categorias', component: CategoriaComponent },
+  { path: 'listar', component: ListarFilmesComponent },
+  { path: 'cadastrar', component: CadastroFilmeComponent },
   { path: 'nova-categoria', component: CadastroCategoriaComponent },
   { path: 'editar', component: CadastroCategoriaComponent },
   { path: 'pessoas', component: PessoaComponent },

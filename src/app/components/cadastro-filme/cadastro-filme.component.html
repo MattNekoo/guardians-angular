@@ -1,12 +1,25 @@
 <div class="body image">
   <div class="container">
-    <h3>Cadastro de Filmes</h3>
-    <form class="example-form" method="post" #frm="ngForm" (ngSubmit)="criar(frm.value)">
+    <h1>Cadastro de Filmes</h1>
+    <form method="post" #frm="ngForm" (ngSubmit)="criar(frm.value)">
       <mat-form-field class="example-full-width">
-        <mat-label>Nome do Filme</mat-label>
+        <mat-label>Filme</mat-label>
         <input matInput placeholder="Nome do Filme" [(ngModel)]="filme.nome" name="nome" required>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Ano</mat-label>
+        <input matInput placeholder="Ano" [(ngModel)]="filme.ano_lancamento" name="ano_lancamento" required>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Descrição</mat-label>
+        <input matInput placeholder="Descrição" [(ngModel)]="filme.dsc_filme" name="dsc_filme" required>
       </mat-form-field>
       <button mat-raised-button color="primary" type="submit" [disabled]="frm.invalid">Salvar</button>
     </form>
+    <div class="dialog" mat-dialog-content>
+      <button mat-raised-button>{{filme.nome}}</button>
+      <button mat-raised-button>{{filme.ano_lancamento}}</button>
+      <button mat-raised-button>{{filme.dsc_filme}}</button>
+    </div>
   </div>
 </div>
