@@ -17,7 +17,7 @@
         <th mat-header-cell *matHeaderCellDef> Ações </th>
         <td mat-cell *matCellDef="let element">
           <div class="example-container" cdkScrollable>
-            <button mat-mini-fab #tooltip="matTooltip" matTooltip="Editar" routerLink="filme/editar"
+            <button mat-mini-fab #tooltip="matTooltip" matTooltip="Editar" routerLink="editar-filme/${element.id}"
               matTooltipPosition="above" matTooltipHideDelay="100" aria-label="" color="primary" class="example-button">
               <mat-icon>edit</mat-icon>
             </button>

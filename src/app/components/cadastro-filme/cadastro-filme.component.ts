@@ -22,13 +22,4 @@ export class CadastroFilmeComponent {
       this.toastr.success('filme cadastrado com sucesso!', 'Sucesso!');
     })
   }
-
-  editar(filme: any) {
-    if (this.apiService.editar(filme)) {
-      this.router.navigate(['filme']);
-      this.toastr.success('filme alterado com sucesso!', 'Sucesso!');
-    } else {
-      this.toastr.error('Erro durante a edição!', 'Erro!');
-    }
-  }
 }

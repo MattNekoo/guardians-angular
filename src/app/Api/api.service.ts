@@ -18,12 +18,20 @@ export class ApiService {
     return this.http.get<any>(`${API_PATH}filme`);
   }
 
+  listFilme(id: any): Observable<any> {
+    return this.http.get<any>(`${API_PATH}filme/${id}`);
+  }
+
   listAllPessoas(): Observable<any> {
     return this.http.get<any>(`${API_PATH}pessoas`);
   }
 
   criar(filme: any) {
     return this.http.post(`${API_PATH}filme`, filme);
+  }
+
+  editarFilme(filme: any) {
+    return this.http.put(`${API_PATH}filme/${filme.codigo}`, filme);
   }
 
   editar(categoria: any) {
