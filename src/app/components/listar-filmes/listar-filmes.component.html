@@ -1,25 +1,23 @@
 <div class="image body">
   <div class="container">
-    <h1>Listagem de Categorias</h1>
+    <h1>Listagem de Filmes</h1>
     <div class="divbotaonovo">
-      <button mat-raised-button color="primary" routerLink="/nova-categoria">Nova Categoria</button>
+      <button mat-raised-button color="primary" routerLink="/cadastrar-filme">Novo Filme</button>
     </div>
-    <table mat-table [dataSource]="categorias" class="mat-elevation-z8">
+    <table mat-table [dataSource]="filmes" class="mat-elevation-z8">
       <ng-container matColumnDef="codigo">
         <th mat-header-cell *matHeaderCellDef> Código </th>
         <td mat-cell *matCellDef="let element"> {{element.id}} </td>
       </ng-container>
-
-      <ng-container matColumnDef="nome">
-        <th mat-header-cell *matHeaderCellDef> Nome </th>
+      <ng-container matColumnDef="filme">
+        <th mat-header-cell *matHeaderCellDef> Filme </th>
         <td mat-cell *matCellDef="let element"> {{element.nomeFilme}} </td>
       </ng-container>
-
       <ng-container matColumnDef="acao">
         <th mat-header-cell *matHeaderCellDef> Ações </th>
         <td mat-cell *matCellDef="let element">
           <div class="example-container" cdkScrollable>
-            <button mat-mini-fab #tooltip="matTooltip" matTooltip="Editar" routerLink="/editar"
+            <button mat-mini-fab #tooltip="matTooltip" matTooltip="Editar" routerLink="filme/editar"
               matTooltipPosition="above" matTooltipHideDelay="100" aria-label="" color="primary" class="example-button">
               <mat-icon>edit</mat-icon>
             </button>

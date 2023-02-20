@@ -4,22 +4,22 @@
     <form method="post" #frm="ngForm" (ngSubmit)="criar(frm.value)">
       <mat-form-field class="example-full-width">
         <mat-label>Filme</mat-label>
-        <input matInput placeholder="Nome do Filme" [(ngModel)]="filme.nome" name="nome" required>
+        <input matInput placeholder="Nome do Filme" [(ngModel)]="filme.nomeFilme" name="nomeFilme" required>
       </mat-form-field>
       <mat-form-field class="example-full-width">
         <mat-label>Ano</mat-label>
-        <input matInput placeholder="Ano" [(ngModel)]="filme.ano_lancamento" name="ano_lancamento" required>
+        <input matInput placeholder="Ano" [(ngModel)]="filme.anoFilme" name="anoFilme" required>
       </mat-form-field>
       <mat-form-field class="example-full-width">
         <mat-label>Descrição</mat-label>
-        <input matInput placeholder="Descrição" [(ngModel)]="filme.dsc_filme" name="dsc_filme" required>
+        <input matInput placeholder="Descrição" [(ngModel)]="filme.dscFilme" name="dscFilme" required>
       </mat-form-field>
       <button mat-raised-button color="primary" type="submit" [disabled]="frm.invalid">Salvar</button>
     </form>
     <div class="dialog" mat-dialog-content>
-      <button mat-raised-button>{{filme.nome}}</button>
-      <button mat-raised-button>{{filme.ano_lancamento}}</button>
-      <button mat-raised-button>{{filme.dsc_filme}}</button>
+      <button mat-raised-button>{{filme.nomeFilme}}</button>
+      <button mat-raised-button>{{filme.anoFilme}}</button>
+      <button mat-raised-button>{{filme.dscFilme}}</button>
     </div>
   </div>
 </div>

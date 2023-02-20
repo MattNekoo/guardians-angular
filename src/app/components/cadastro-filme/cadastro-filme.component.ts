@@ -18,15 +18,15 @@ export class CadastroFilmeComponent {
 
   criar(frm: FormGroup) {
     this.apiService.criar(this.filme).subscribe(resposta => {
-      this.router.navigate(['filme']);
-      this.toastr.success('filme cadastrada com sucesso!', 'Sucesso!');
+      this.router.navigate(['listar-filme']);
+      this.toastr.success('filme cadastrado com sucesso!', 'Sucesso!');
     })
   }
 
   editar(filme: any) {
     if (this.apiService.editar(filme)) {
       this.router.navigate(['filme']);
-      this.toastr.success('filme alterada com sucesso!', 'Sucesso!');
+      this.toastr.success('filme alterado com sucesso!', 'Sucesso!');
     } else {
       this.toastr.error('Erro durante a edição!', 'Erro!');
     }

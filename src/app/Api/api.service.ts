@@ -22,8 +22,8 @@ export class ApiService {
     return this.http.get<any>(`${API_PATH}pessoas`);
   }
 
-  criar(categoria: any) {
-    return this.http.post(`${API_PATH}categorias`, categoria);
+  criar(filme: any) {
+    return this.http.post(`${API_PATH}filme`, filme);
   }
 
   editar(categoria: any) {

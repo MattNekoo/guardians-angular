@@ -10,19 +10,20 @@ import { TooltipPosition } from '@angular/material/tooltip';
 })
 export class ListarFilmesComponent {
   constructor(private apiService: ApiService) {
-    this.categorias = [];
+    this.filmes = [];
     this.listarAllFilmes();
   }
-
-  categorias: Array<any>;
-
+  
+  filmes: Array<any>;
+  
   listarAllFilmes() {
-    this.apiService.listAllFilmes().subscribe(dados => {
-      this.categorias = dados.content
+    this.apiService.listAllFilmes().subscribe(dados => {      
+      this.filmes = dados
+      console.log(this.filmes,'filmes');
     });
   }
 
-  displayedColumns: string[] = ['codigo', 'nome', 'acao'];
+  displayedColumns: string[] = ['codigo', 'filme', 'acao'];
 
   positionOptions: TooltipPosition[] = ['below', 'above', 'left', 'right'];
   position = new FormControl(this.positionOptions[0]);
