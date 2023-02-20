@@ -10,7 +10,8 @@ A aplicação consiste em um sistema de Filmes, cadastro e edição.
 ## Front end
 - Angular
 
-## Integração back-end via API -- projeto git: https://github.com/MattNekoo/workshop-springboot-mongodb
+## Integração back-end via API 
+projeto git: https://github.com/MattNekoo/workshop-springboot-mongodb
 Spring-Boot 3
 Maven
 MongoDB
