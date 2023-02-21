@@ -14,11 +14,11 @@ export class EditarFilmeComponent {
 
   constructor(private apiService: ApiService, private router: Router, private toastr: ToastrService) {
     this.filme = {};
-    this.listFilme();
+    this.listFilmeId();
   }
 
-  listFilme() {
-    this.apiService.listFilme(1).subscribe(dados => {      
+  listFilmeId() {
+    this.apiService.listFilmeId(1).subscribe(dados => {      
       this.filme = dados
       console.log(this.filme,'filme');
     });

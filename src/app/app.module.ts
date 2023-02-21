@@ -23,7 +23,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { ToastrModule } from 'ngx-toastr';
 import { MatTooltipModule } from '@angular/material/tooltip';
@@ -61,6 +61,7 @@ import { EditarFilmeComponent } from './components/editar-filme/editar-filme.com
     MatDialogModule,
     MatInputModule,
     FormsModule,
+    ReactiveFormsModule,
     MatPaginatorModule,
     ToastrModule,
     ToastrModule.forRoot(),

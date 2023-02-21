@@ -12,6 +12,8 @@ const APP_ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'categorias', component: CategoriaComponent },
   { path: 'listar-filme', component: ListarFilmesComponent },
+  { path: 'listar-filme/:id', component: CadastroFilmeComponent },
+  { path: 'editar-filme/:id', component: CadastroFilmeComponent },
   { path: 'cadastrar-filme', component: CadastroFilmeComponent },
   { path: 'pessoas', component: PessoaComponent },
   { path: 'editar-filme', component: EditarFilmeComponent },

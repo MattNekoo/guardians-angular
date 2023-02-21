@@ -15,26 +15,34 @@ export class ApiService {
   }
 
   listAllFilmes(): Observable<any> {
-    return this.http.get<any>(`${API_PATH}filme`);
+    return this.http.get<any>(`${API_PATH}filmes`);
   }
 
-  listFilme(id: any): Observable<any> {
-    return this.http.get<any>(`${API_PATH}filme/${id}`);
+  listFilmeId(id: any): Observable<any> {
+    return this.http.get<any>(`${API_PATH}filmes/${id}`);
   }
 
   listAllPessoas(): Observable<any> {
     return this.http.get<any>(`${API_PATH}pessoas`);
   }
 
-  criar(filme: any) {
-    return this.http.post(`${API_PATH}filme`, filme);
+  cadastrarFilme(filme: any) {
+    return this.http.post(`${API_PATH}filmes`, filme);
   }
 
   editarFilme(filme: any) {
-    return this.http.put(`${API_PATH}filme/${filme.codigo}`, filme);
+    return this.http.put(`${API_PATH}filmes/${filme.id}`, filme);
   }
 
+  excluirFilme(id: any){
+    return this.http.delete(`${API_PATH}filmes/${id}`);
+  }
+  
   editar(categoria: any) {
     return this.http.put(`${API_PATH}categorias/${categoria.codigo}`, categoria);
+  }
+
+  criar(filme: any) {
+    return this.http.put(`${API_PATH}filmes/${filme.codigo}`, filme);
   }
 }
