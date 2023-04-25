@@ -30,6 +30,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { ListarFilmesComponent } from './components/listar-filmes/listar-filmes.component';
 import { CadastroFilmeComponent } from './components/cadastro-filme/cadastro-filme.component';
 import { EditarFilmeComponent } from './components/editar-filme/editar-filme.component';
+import { ListarAnimesComponent } from './components/listar-animes/listar-animes.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { EditarFilmeComponent } from './components/editar-filme/editar-filme.com
     CadastroCategoriaComponent,
     ListarFilmesComponent,
     CadastroFilmeComponent,
-    EditarFilmeComponent
+    EditarFilmeComponent,
+    ListarAnimesComponent
   ],
   imports: [
     BrowserModule,

@@ -22,6 +22,14 @@ export class ApiService {
     return this.http.get<any>(`${API_PATH}filmes/${id}`);
   }
 
+  listAllAnimes(): Observable<any> {
+    return this.http.get<any>(`${API_PATH}animes`);
+  }
+
+  listAnimesId(id: any): Observable<any> {
+    return this.http.get<any>(`${API_PATH}animes/${id}`);
+  }
+
   listAllPessoas(): Observable<any> {
     return this.http.get<any>(`${API_PATH}pessoas`);
   }
@@ -35,6 +43,10 @@ export class ApiService {
   }
 
   excluirFilme(id: any){
+    return this.http.delete(`${API_PATH}filmes/${id}`);
+  }
+
+  excluirAnime(id: any){
     return this.http.delete(`${API_PATH}filmes/${id}`);
   }
   
