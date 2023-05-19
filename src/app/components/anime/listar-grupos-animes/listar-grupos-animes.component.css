@@ -53,7 +53,7 @@ table td {
 h2 {
   font-size: 24px;
   margin-top: 40px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -71,6 +71,28 @@ button[color="secondary"] {
   margin-left: 1em;
 }
 
+button[color="terciary"] {
+  background-color: orange;
+  color: black;
+  margin-left: 1em;
+}
+
 .divbotaonovo {
   margin-bottom: 25px;
+}
+
+.custom-table {
+  padding: auto;
+}
+
+.small-button {
+  font-size: 12px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+
+.icon-pendencia {
+  color: orange;
+  opacity: 0.5;
 }

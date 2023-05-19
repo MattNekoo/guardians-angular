@@ -22,6 +22,10 @@ export class AnimeService {
     return this.http.get<any>(`${API_PATH}animes/${id}`);
   }
 
+  listPendenciaAnime(): Observable<any> {
+    return this.http.get<any>(`${API_PATH}pendencia-animes`);
+  }
+
   cadastrarAnime(anime: any) {
     return this.http.post(`${API_PATH}animes`, anime);
   }
