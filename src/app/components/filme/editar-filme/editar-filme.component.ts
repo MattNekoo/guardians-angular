@@ -1,4 +1,4 @@
-import { ApiService } from './../../Api/api.service';
+import { ApiService } from '../../../Api/api.service';
 import { FormGroup } from '@angular/forms';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
@@ -18,7 +18,7 @@ export class EditarFilmeComponent {
   }
 
   listFilmeId() {
-    this.apiService.listFilmeId(1).subscribe(dados => {      
+    this.apiService.listFilmeId(1).subscribe(dados => {
       this.filme = dados
       console.log(this.filme,'filme');
     });

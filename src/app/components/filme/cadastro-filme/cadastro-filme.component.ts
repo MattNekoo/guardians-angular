@@ -1,4 +1,4 @@
-import { ApiService } from './../../Api/api.service';
+import { ApiService } from '../../../Api/api.service';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';

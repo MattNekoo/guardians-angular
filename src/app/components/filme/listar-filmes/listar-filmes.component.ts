@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ApiService } from './../../Api/api.service';
+import { ApiService } from '../../../Api/api.service';
 import {FormControl} from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { TooltipPosition } from '@angular/material/tooltip';
@@ -16,15 +16,15 @@ export class ListarFilmesComponent {
     this.id = "";
     this.listarAllFilmes();
   }
-  
+
   filmes: Array<any>;
   id: any;
-  
+
   listarAllFilmes() {
-    this.apiService.listAllFilmes().subscribe(dados => {      
+    this.apiService.listAllFilmes().subscribe(dados => {
       this.filmes = dados
       this.id = dados.id
-    });    
+    });
   }
 
   excluirFilme(id: any){

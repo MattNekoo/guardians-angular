@@ -12,6 +12,11 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { ContentComponent } from './components/template/content/content.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { CadastroCategoriaComponent } from './components/cadastro-categoria/cadastro-categoria.component';
+import { ListarFilmesComponent } from './components/filme/listar-filmes/listar-filmes.component';
+import { CadastroFilmeComponent } from './components/filme/cadastro-filme/cadastro-filme.component';
+import { EditarFilmeComponent } from './components/filme/editar-filme/editar-filme.component';
+import { ListarAnimesComponent } from './components/anime/listar-animes/listar-animes.component';
+import { CadastrarAnimesComponent } from './components/anime/cadastrar-animes/cadastrar-animes.component';
 
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,10 +32,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { ToastrModule } from 'ngx-toastr';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { ListarFilmesComponent } from './components/listar-filmes/listar-filmes.component';
-import { CadastroFilmeComponent } from './components/cadastro-filme/cadastro-filme.component';
-import { EditarFilmeComponent } from './components/editar-filme/editar-filme.component';
-import { ListarAnimesComponent } from './components/listar-animes/listar-animes.component';
+import { ListarGruposAnimesComponent } from './components/anime/listar-grupos-animes/listar-grupos-animes.component';
+
 
 @NgModule({
   declarations: [
@@ -46,7 +49,9 @@ import { ListarAnimesComponent } from './components/listar-animes/listar-animes.
     ListarFilmesComponent,
     CadastroFilmeComponent,
     EditarFilmeComponent,
-    ListarAnimesComponent
+    ListarAnimesComponent,
+    CadastrarAnimesComponent,
+    ListarGruposAnimesComponent
   ],
   imports: [
     BrowserModule,
@@ -60,11 +65,11 @@ import { ListarAnimesComponent } from './components/listar-animes/listar-animes.
     MatMenuModule,
     MatIconModule,
     MatTableModule,
+    MatPaginatorModule,
     MatDialogModule,
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    MatPaginatorModule,
     ToastrModule,
     ToastrModule.forRoot(),
     MatTooltipModule

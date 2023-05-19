@@ -1,0 +1,53 @@
+<div class="body image">
+  <div class="container">
+    <h1>Cadastro de Animes</h1>
+    <form class="example-form" [formGroup]="frm" (ngSubmit)="salvar()">
+      <mat-form-field class="example-full-width">
+        <mat-label>Nome do Anime</mat-label>
+        <input matInput placeholder="Nome do Filme" formControlName="nome" required>
+        <mat-error *ngIf="frm.controls['nome'].invalid && frm.controls['nome'].touched">
+          Por favor, insira o nome do anime.
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Ano</mat-label>
+        <input matInput type="number" placeholder="Ano" formControlName="ano" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Tipo</mat-label>
+        <input matInput placeholder="Tipo" formControlName="tipo">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Episódio</mat-label>
+        <input matInput placeholder="Episódio" formControlName="epi" required>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Score</mat-label>
+        <input matInput placeholder="Score" formControlName="score" required>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Nota</mat-label>
+        <input matInput placeholder="Nota" formControlName="nota" required>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Coleção</mat-label>
+        <input matInput placeholder="Coleção" formControlName="colecao">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Sequência</mat-label>
+        <input matInput placeholder="Sequência" formControlName="sequencia" required>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="frm.invalid">Salvar</button>
+    </form>
+    <div class="dialog" mat-dialog-content>
+      <button mat-raised-button>{{frm.value.nome}}</button>
+      <button mat-raised-button>{{frm.value.ano}}</button>
+      <button mat-raised-button>{{frm.value.tipo}}</button>
+      <button mat-raised-button>{{frm.value.epi}}</button>
+      <button mat-raised-button>{{frm.value.score}}</button>
+      <button mat-raised-button>{{frm.value.nota}}</button>
+    </div>
+  </div>
+</div>
