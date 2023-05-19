@@ -3,7 +3,7 @@
     <h1>Listagem Agrupada</h1>
     <div class="divbotaonovo">
       <button mat-raised-button color="primary" routerLink="/cadastrar-anime">Novo Anime</button>
-      <button mat-raised-button color="secondary" routerLink="/listar-grupos-anime">Listagem por Grupos</button>
+      <button mat-raised-button color="secondary" routerLink="/listar-anime">Listagem Total</button>
     </div>
 
     <div *ngFor="let animeData of animesData">
@@ -31,19 +31,19 @@
             <td>{{ anime.scoreAnime }}</td>
             <td>{{ anime.notaAnime }}</td>
             <td><div class="example-container" cdkScrollable>
-              <button mat-mini-fab #tooltip="matTooltip" matTooltip="Listar" routerLink="/listar-anime/{{anime.id}}"
+              <button mat-mini-fab #tooltip="matTooltip" matTooltip="Pendência" routerLink="/pendencia-anime/{{anime.id}}"
                 matTooltipPosition="above" matTooltipHideDelay="100" aria-label="" color="primary"
                 class="example-button">
                 <mat-icon>list</mat-icon>
               </button>
+              <span>&nbsp;&nbsp;</span>
               <button mat-mini-fab #tooltip="matTooltip" matTooltip="Editar" routerLink="/editar-anime/{{anime.id}}"
                 matTooltipPosition="above" matTooltipHideDelay="100" aria-label="" color="primary"
                 class="example-button">
                 <mat-icon>edit</mat-icon>
               </button>
-              <span>&nbsp;&nbsp;</span>
               <button mat-mini-fab #tooltip="matTooltip" matTooltip="Excluir" (click)="excluirAnime(anime.id)"
-                matTooltipPosition="above" matTooltipHideDelay="100" aria-label="" color="warn" class="example-button">
+                matTooltipPosition="above" matTooltipHideDelay="100" aria-label="" color="secondary" class="example-button">
                 <mat-icon>delete</mat-icon>
               </button>
             </div></td>

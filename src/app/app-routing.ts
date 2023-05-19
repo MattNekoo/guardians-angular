@@ -24,7 +24,6 @@ const APP_ROUTES: Routes = [
 
   { path: 'listar-anime', component: ListarAnimesComponent },
   { path: 'listar-grupos-anime', component: ListarGruposAnimesComponent },
-  { path: 'listar-anime/:id', component: CadastrarAnimesComponent },
   { path: 'editar-anime/:id', component: CadastrarAnimesComponent },
   { path: 'cadastrar-anime', component: CadastrarAnimesComponent },
 
