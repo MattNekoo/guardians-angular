@@ -40,14 +40,8 @@
       </mat-form-field>
 
     </form>
-    <button mat-raised-button color="primary" type="submit">Salvar</button>
     <div class="dialog" mat-dialog-content>
-      <button mat-raised-button>{{frm.value.nome}}</button>
-      <button mat-raised-button>{{frm.value.ano}}</button>
-      <button mat-raised-button>{{frm.value.tipo}}</button>
-      <button mat-raised-button>{{frm.value.epi}}</button>
-      <button mat-raised-button>{{frm.value.score}}</button>
-      <button mat-raised-button>{{frm.value.nota}}</button>
+      <button mat-raised-button color="terciary" [disabled]="!frm.valid">Cadastrar</button>
     </div>
   </div>
 </div>

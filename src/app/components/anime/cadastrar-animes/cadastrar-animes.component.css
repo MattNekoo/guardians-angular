@@ -1,5 +1,5 @@
 .image {
-  background-image: url('../../../../assets/img/space-50.jpg');
+  background-image: url('../../../../assets/img/space4.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,8 +8,21 @@
 }
 
 .example-form {
-  min-width: 150px;
-  /* max-width: 500px; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto; /* Adiciona margem automática nas laterais para centralizar */
+  max-width: 700px; /* Defina um valor máximo para o contêiner se desejar */
+}
+
+.example-form {
+  width: calc(80% - 10px); /* Defina a largura desejada para os campos */
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.example-full-width {
   width: 100%;
 }
 
@@ -17,14 +30,10 @@
   background-color: white;
 }
 
-.example-full-width {
-  width: 100%;
-}
-
 .body {
   margin: 0;
   padding: 0;
-  padding-bottom: 1000px;
+  padding-bottom: 200px;
   color: white;
   padding-top: 100px;
 }
@@ -32,16 +41,36 @@
 .container {
   text-align: center;
   justify-content: center;
-  width: 50%;
+  width: 80%;
   box-sizing: border-box;
   display: block;
   flex-wrap: wrap;
   padding-top: 1rem;
   position: center;
   margin: auto;
-  color: orange;
 }
 
 .dialog {
   margin-top: 20px;
+}
+
+button[color="primary"] {
+  background-color: #8a3fff;
+  color: white;
+}
+
+button[color="secondary"] {
+  background-color: #d9ff00;
+  color: black;
+  margin-left: 1em;
+}
+
+button[color="terciary"] {
+  background-color: orange;
+  color: black;
+  margin-left: 1em;
+}
+
+h1 {
+ color: orange;
 }
