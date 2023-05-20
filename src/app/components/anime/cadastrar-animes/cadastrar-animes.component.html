@@ -5,7 +5,7 @@
       <mat-form-field class="example-full-width">
         <mat-label>Nome do Anime</mat-label>
         <input matInput placeholder="Nome do Filme" formControlName="nome" required>
-        <mat-error *ngIf="frm.controls['nome'].invalid && frm.controls['nome'].touched">
+        <mat-error class="mensagem_error" *ngIf="frm.get('nome')?.errors?.['required']">
           Por favor, insira o nome do anime.
         </mat-error>
       </mat-form-field>
@@ -39,8 +39,8 @@
         <input matInput placeholder="Sequência" formControlName="sequencia" required>
       </mat-form-field>
 
-      <button mat-raised-button color="primary" type="submit" [disabled]="frm.invalid">Salvar</button>
     </form>
+    <button mat-raised-button color="primary" type="submit">Salvar</button>
     <div class="dialog" mat-dialog-content>
       <button mat-raised-button>{{frm.value.nome}}</button>
       <button mat-raised-button>{{frm.value.ano}}</button>

@@ -1,0 +1,21 @@
+<table class="custom-table">
+  <thead>
+    <tr>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ pendencia.nome }}</td>
+      <td>{{ pendencia.ano }}</td>
+      <td>
+        <div>
+          <button mat-mini-fab #tooltip="matTooltip" matTooltip="Excluir"
+            matTooltipPosition="above" matTooltipHideDelay="100"
+            aria-label="" color="q" class="small-button">
+            <mat-icon class="icon-pendencia">delete</mat-icon>
+          </button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

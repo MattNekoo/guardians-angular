@@ -34,6 +34,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ListarGruposAnimesComponent } from './components/anime/listar-grupos-animes/listar-grupos-animes.component';
+import { TableGruposAnimesComponent } from './components/anime/listar-grupos-animes/table-grupos-animes/table-grupos-animes.component';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { ListarGruposAnimesComponent } from './components/anime/listar-grupos-an
     EditarFilmeComponent,
     ListarAnimesComponent,
     CadastrarAnimesComponent,
-    ListarGruposAnimesComponent
+    ListarGruposAnimesComponent,
+    TableGruposAnimesComponent
   ],
   imports: [
     BrowserModule,

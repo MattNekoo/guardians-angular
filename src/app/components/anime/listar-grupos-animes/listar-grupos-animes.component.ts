@@ -70,17 +70,3 @@ export class ListarGruposAnimesComponent implements OnInit, AfterViewInit {
     return items.slice(startIndex, endIndex);
   }
 }
-
-export interface Animes {
-  _id: string;
-  colecao: string;
-  animes: {
-    anime: string;
-    tipo: string;
-    ano: number;
-    epi: string;
-    score: string;
-    nota: number;
-    acao: any;
-  }
-}
