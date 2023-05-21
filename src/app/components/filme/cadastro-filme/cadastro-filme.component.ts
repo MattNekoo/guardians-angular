@@ -28,7 +28,6 @@ export class CadastroFilmeComponent {
       ano: new FormControl(''),
       dsc: new FormControl('')
     })
-    console.log(this.frm, 'frm');
     this.loadFilme()
   }
 

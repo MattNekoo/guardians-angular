@@ -1,0 +1,113 @@
+{
+  "animes": [
+    {
+      "id": "1",
+      "nomeAnime": "Gin no Saji",
+      "tipoAnime": "TV",
+      "anoAnime": 2014,
+      "epiAnime": 11,
+      "scoreAnime": 8.1,
+      "notaAnime": 9,
+      "sequencia": 1,
+      "colecao": null,
+      "pendencias": [
+        {
+          "id": "646a3e88c1cb2d2f7f353416",
+          "nome": "Another OVA",
+          "ano": 2013
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nomeAnime": "Ajin 1",
+      "tipoAnime": "TV",
+      "anoAnime": 2014,
+      "epiAnime": 11,
+      "scoreAnime": 8.1,
+      "notaAnime": 9,
+      "sequencia": 2,
+      "colecao": null,
+      "pendencias": []
+    },
+    {
+      "id": "3",
+      "nomeAnime": "Ajin 2",
+      "tipoAnime": "TV",
+      "anoAnime": 2014,
+      "epiAnime": 11,
+      "scoreAnime": 8.1,
+      "notaAnime": 9,
+      "sequencia": 1,
+      "colecao": null,
+      "pendencias": []
+    },
+    {
+      "nomeAnime": "123",
+      "anoAnime": 23,
+      "tipoAnime": "123",
+      "epiAnime": "123",
+      "scoreAnime": "123",
+      "notaAnime": "123",
+      "colecao": "123",
+      "sequencia": "123",
+      "id": "RZeLsi3"
+    }
+  ],
+  "grupo-animes": [
+    {
+      "id": "646a3e88c1cb2d2f7f353415",
+      "colecao": "Ajin",
+      "animes": [
+        {
+          "id": "646a3e88c1cb2d2f7f353410",
+          "nomeAnime": "Ajin 1",
+          "tipoAnime": "TV",
+          "anoAnime": 2014,
+          "epiAnime": 11,
+          "scoreAnime": 8.1,
+          "notaAnime": 9,
+          "sequencia": 2,
+          "colecao": null,
+          "pendencias": []
+        },
+        {
+          "id": "646a3e88c1cb2d2f7f353411",
+          "nomeAnime": "Ajin 2",
+          "tipoAnime": "TV",
+          "anoAnime": 2014,
+          "epiAnime": 11,
+          "scoreAnime": 8.1,
+          "notaAnime": 9,
+          "sequencia": 1,
+          "colecao": null,
+          "pendencias": []
+        }
+      ]
+    },
+    {
+      "id": "646a3e88c1cb2d2f7f353414",
+      "colecao": "Gin no Saji",
+      "animes": [
+        {
+          "id": "646a3e88c1cb2d2f7f35340f",
+          "nomeAnime": "Gin no Saji",
+          "tipoAnime": "TV",
+          "anoAnime": 2014,
+          "epiAnime": 11,
+          "scoreAnime": 8.1,
+          "notaAnime": 9,
+          "sequencia": 1,
+          "colecao": null,
+          "pendencias": [
+            {
+              "id": "646a3e88c1cb2d2f7f353416",
+              "nome": "Another OVA",
+              "ano": 2013
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

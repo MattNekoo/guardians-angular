@@ -20,7 +20,6 @@ export class EditarFilmeComponent {
   listFilmeId() {
     this.apiService.listFilmeId(1).subscribe(dados => {
       this.filme = dados
-      console.log(this.filme,'filme');
     });
   }
 }

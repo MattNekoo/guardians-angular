@@ -33,6 +33,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { ToastrModule } from 'ngx-toastr';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatSortModule } from '@angular/material/sort';
 import { ListarGruposAnimesComponent } from './components/anime/listar-grupos-animes/listar-grupos-animes.component';
 import { TableGruposAnimesComponent } from './components/anime/listar-grupos-animes/table-grupos-animes/table-grupos-animes.component';
 
@@ -76,7 +77,8 @@ import { TableGruposAnimesComponent } from './components/anime/listar-grupos-ani
     ToastrModule,
     ToastrModule.forRoot(),
     MatTooltipModule,
-    MatExpansionModule
+    MatSortModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

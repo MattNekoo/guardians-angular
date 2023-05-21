@@ -97,6 +97,7 @@ export class CadastrarAnimesComponent {
   }
 
   salvar() {
+    console.log(this.id,'this.id');
     this.id ? this.alterar() : this.cadastrar();
   }
 }

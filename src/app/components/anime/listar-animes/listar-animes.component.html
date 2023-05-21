@@ -7,10 +7,10 @@
     </div>
 
     <div class="mat-elevarion-z8">
-      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8" >
         <ng-container matColumnDef="anime">
-          <th mat-header-cell *matHeaderCellDef> Anime </th>
-          <td mat-cell *matCellDef="let element"> {{element.nomeAnime}} </td>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Anime </th>
+          <td mat-cell *matCellDef="let anime"> {{anime.nomeAnime}} </td>
         </ng-container>
         <ng-container matColumnDef="tipo">
           <th mat-header-cell *matHeaderCellDef> Tipo </th>
